@@ -47,7 +47,7 @@ Anyone can contribute, but you must treat this repository with safety and carefu
 ## Authors and acknowledgment
 Thanks to everyone who has contributed to this project, your commitment is valuable to us!
 ## License
-For open source projects, say how it is licensed.
+CoreVR is licensed under the Apache License 2.0.
 
 ## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+CoreVR is still under development.
