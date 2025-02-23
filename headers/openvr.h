@@ -4073,6 +4073,18 @@ namespace vr
 		/** Finds an existing overlay with the specified key. */
 		virtual EVROverlayError FindOverlay( const char *pchOverlayKey, VROverlayHandle_t * pOverlayHandle ) = 0;
 
+/** Creates the app shelf overlay. This component is where users can launch and open apps.*/
+VROverlayHandle_t overlayHandle;
+EVROverlayError error = VRSystem->CreateOverlay("appShelf", "App Shelf", &overlayHandle);
+error = VRSystem->SetOverlayColor(overlayHandle, 0.5f, 0.5f, 0.5f);
+error = VRSystem->SetOverlayAlpha(overlayHandle, 0.3f);
+error = VRSystem->SetOverlayWidthInMeters(overlayHandle, 1.0f);
+Texture_t texture = flat;
+error = VRSystem->SetOverlayTexture(overlayHandle, &texture);
+HmdMatrix34_t transform = bottom;
+error = VRSyste,->SetOverlayTransformAbsolute(overlayHandle, TrackingUniverseStanding, &transform);
+error = VRSystem->ShowOverlay(overlayHandle);
+
 		/** Creates a new named overlay. All overlays start hidden and with default settings. */
 		virtual EVROverlayError CreateOverlay( const char *pchOverlayKey, const char *pchOverlayName, VROverlayHandle_t * pOverlayHandle ) = 0;
 
@@ -4283,6 +4295,7 @@ namespace vr
 
 		/** Clears the override cursor position for this overlay */
 		virtual EVROverlayError ClearOverlayCursorPositionOverride( VROverlayHandle_t ulOverlayHandle ) = 0;
+
 
 		// ---------------------------------------------
 		// Overlay texture methods
