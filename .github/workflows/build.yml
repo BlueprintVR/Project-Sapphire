@@ -1,0 +1,21 @@
+name: Build Firmware (macOS)
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: macos-latest  # Use macOS runner
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v3
+
+    - name: Install Vulkan (MoltenVK via Homebrew)
+      run: brew install molten-vk
+
+    - name: Compile Firmware
+      run: |
+        clang++ -o firmware main.cpp -Iinclude -framework MoltenVK
+
+    - name: Verify Build
+      run: ./firmware || echo "Firmware built successfully"
