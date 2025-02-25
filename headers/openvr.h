@@ -4073,7 +4073,13 @@ namespace vr
 		/** Finds an existing overlay with the specified key. */
 		virtual EVROverlayError FindOverlay( const char *pchOverlayKey, VROverlayHandle_t * pOverlayHandle ) = 0;
 
+VROverlayHandle_t parentOverlayHandle;
+VROverlayHandle_t childOverlayHandle;
+EVROverlayError overlayError;
+
 /** Creates the app shelf overlay. This component is where users can launch and open apps.*/
+overlayError = VROverlay()->CreateOverlay("appShelf", "App Shelf", &parentOverlayHandle);
+if (overlayError != vr::VROverlayError_None) {
 VROverlayHandle_t overlayHandle;
 EVROverlayError error = VRSystem->CreateOverlay("appShelf", "App Shelf", &overlayHandle);
 error = VRSystem->SetOverlayColor(overlayHandle, 0.5f, 0.5f, 0.5f);
@@ -4084,6 +4090,12 @@ error = VRSystem->SetOverlayTexture(overlayHandle, &texture);
 HmdMatrix34_t transform = bottom;
 error = VRSyste,->SetOverlayTransformAbsolute(overlayHandle, TrackingUniverseStanding, &transform);
 error = VRSystem->ShowOverlay(overlayHandle);
+}
+
+overlayError = VROverlay()->CreateOverlay("webBrowser", "Web Browser", &childOverlayHandle);
+if (overlayError != vr::VROverlayError_None) {
+	// Web Browser Overlay errors will be handled in future releases.
+}
 
 		/** Creates a new named overlay. All overlays start hidden and with default settings. */
 		virtual EVROverlayError CreateOverlay( const char *pchOverlayKey, const char *pchOverlayName, VROverlayHandle_t * pOverlayHandle ) = 0;
