@@ -3,14 +3,14 @@ name: Vulkan Verification
 on: [push, pull_request]
 
 jobs:
-build:
-runs-on: macOS-latest
+  build:
+    runs-on: macOS-latest
 
-  steps:
+    steps:
      - name: Verify Enviroment Variables
-  run: |
-   echo $VULKAN_SDK
+       run: |
+          echo $VULKAN_SDK
 
-- name: Check Vulkan Loader
-  run: |
-   vulkaninfo
+     - name: Check Vulkan Loader
+       run: |
+        vulkaninfo
