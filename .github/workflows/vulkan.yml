@@ -7,10 +7,16 @@ jobs:
     runs-on: macOS-latest
 
     steps:
-     - name: Verify Enviroment Variables
-       run: |
-          echo $VULKAN_SDK
+    - name: Checkout code
+      uses: actions/checkout@v2
 
-     - name: Check Vulkan Loader
-       run: |
-        vulkaninfo
+    - name: Set up Vulkan SDK
+      run: |
+        wget -q0- https://sdk.lunarg.com/sdk/download/latest/macos/vulkan-sdk.dmg | tar -xz -C /tmp
+        sudo installer -pkg /tmp/vulkan-sdk/VulkanSDK.pkg -target /
+
+     steps:
+     - name: Verify Enviroment Variables
+        run: |
+         echo $VULKAN_SDK
+         vulkaninfo
