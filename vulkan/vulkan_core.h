@@ -21,7 +21,7 @@ extern "C" {
 
 // VK_VERSION_1_0 is a preprocessor guard. Do not pass it to API calls.
 #define VK_VERSION_1_0 1
-#include "vk_platform.h"
+#include "vulkan/vk_platform.h"
 
 #define VK_DEFINE_HANDLE(object) typedef struct object##_T* object;
 
