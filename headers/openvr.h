@@ -4094,7 +4094,8 @@ error = VRSystem->ShowOverlay(overlayHandle);
 
 overlayError = VROverlay()->CreateOverlay("webBrowser", "Web Browser", &childOverlayHandle);
 if (overlayError != vr::VROverlayError_None) {
-	// Web Browser Overlay errors will be handled in future releases.
+	VROverlayHandle_t overlayHandle;
+	EVROverlayError error = VRSystem->CreateOverlay("webBrowser", "Web Browser", &overlayHandle);
 }
 
 		/** Creates a new named overlay. All overlays start hidden and with default settings. */
