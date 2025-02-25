@@ -15,7 +15,7 @@ jobs:
 
     - name: Compile Firmware
       run: |
-        clang++ -o firmware main.cpp -Iinclude -framework MoltenVK
+        clang++ -std=c++11 -o firmware main.cpp -Iinclude -framework MoltenVK
 
     - name: Verify Build
       run: ./firmware || echo "Firmware built successfully"
