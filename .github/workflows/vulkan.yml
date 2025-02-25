@@ -3,7 +3,7 @@ name: Vulkan Verification
 on: [push, pull_request]
 
 jobs:
-  build:
+   build:
     runs-on: macOS-latest
 
     steps:
@@ -15,7 +15,7 @@ jobs:
         wget -q0- https://sdk.lunarg.com/sdk/download/latest/macos/vulkan-sdk.dmg | tar -xz -C /tmp
         sudo installer -pkg /tmp/vulkan-sdk/VulkanSDK.pkg -target /
 
-     steps:
+    steps:
      - name: Verify Enviroment Variables
         run: |
          echo $VULKAN_SDK
