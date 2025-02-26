@@ -11,10 +11,14 @@ jobs:
       uses: actions/checkout@v3
 
     - name: Install Vulkan (MoltenVK via Homebrew)
-      run: brew install molten-vk
+      run: |
+       brew install molten-vk
+       export VULKAN_SDK=$(brew --prefix molten-vk)/MoltenVK/macOS
+       echo 'export VULKAN_SDK=$(brew --prefix molten-vk)/MoltenVK/macOS' >> $GITHUB_ENV
 
     - name: Compile Firmware
       run: |
+        source $GITHUB_ENV
         clang++ -std=c++11 -o firmware main.cpp -Iinclude -framework MoltenVK
 
     - name: Verify Build
