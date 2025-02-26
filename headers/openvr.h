@@ -4096,6 +4096,13 @@ overlayError = VROverlay()->CreateOverlay("webBrowser", "Web Browser", &childOve
 if (overlayError != vr::VROverlayError_None) {
 	VROverlayHandle_t overlayHandle;
 	EVROverlayError error = VRSystem->CreateOverlay("webBrowser", "Web Browser", &overlayHandle);
+	vr::Texture_t texture;
+	texture.handle = (void*)flat;
+	texture.eType = vr::TextureType_OpenGL;
+	texture.eColorSpace = vr::ColorSpace_Auto;
+	vr::VROverlay()->SetOverlayTexture(overlayHandle, &texture);
+	vr::VROverlay()->SetOverlayFromFile(overlayHandle, "path/to/image.png"); // "path/to/image.png" is a placeholder image asset, and will be removed once the actual image has been uploaded to this repository.
+	
 }
 
 		/** Creates a new named overlay. All overlays start hidden and with default settings. */
