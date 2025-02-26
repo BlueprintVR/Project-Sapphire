@@ -4101,7 +4101,7 @@ if (overlayError != vr::VROverlayError_None) {
 	texture.eType = vr::TextureType_OpenGL;
 	texture.eColorSpace = vr::ColorSpace_Auto;
 	vr::VROverlay()->SetOverlayTexture(overlayHandle, &texture);
-	vr::VROverlay()->SetOverlayFromFile(overlayHandle, "path/to/image.png"); // "path/to/image.png" is a placeholder image asset, and will be removed once the actual image has been uploaded to this repository.
+	vr::VROverlay()->SetOverlayFromFile(overlayHandle, "icons/browser.png"); 
 	
 }
 
