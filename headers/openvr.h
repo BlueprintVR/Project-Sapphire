@@ -4105,6 +4105,18 @@ if (overlayError != vr::VROverlayError_None) {
 	
 }
 
+overlayError = VROverlay()->CreateOverlay("files", "Files", &childOverlayHandle);
+if (overlayError = vr::VROverlayError_None) {
+  VROverlayHandle_t overlayHandle;
+  EVROverlayError error = VRSystem->CreateOverlay("files", "Files", &overlayHandle);
+  vr::Texture_t texture;
+  texture.handle = (void*)flat;
+  texture.eType = vr::TextureType_OpenGL;
+  texture.eColorSpace = vr::ColorSpace_Auto;
+  vr::VROverlay()->SetOverlayTexture(overlayHandle, &texture);
+  vr::VROverlay()->SetOverlayFromFile(overlayHandle, "icons/files.png");
+}
+
 		/** Creates a new named overlay. All overlays start hidden and with default settings. */
 		virtual EVROverlayError CreateOverlay( const char *pchOverlayKey, const char *pchOverlayName, VROverlayHandle_t * pOverlayHandle ) = 0;
 

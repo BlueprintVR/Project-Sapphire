@@ -1,0 +1,56 @@
+[
+{
+  "directory": "/Users/dylando/fleet/Project-Sapphire/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DOSX -DPOSIX -DVRCORE_NO_PLATFORM -DVR_API_PUBLIC -I/Users/dylando/fleet/Project-Sapphire/src -I/Users/dylando/fleet/Project-Sapphire/src/../headers -I/Users/dylando/fleet/Project-Sapphire/src/vrcore  -std=c++11 -fPIC -fvisibility=hidden -stdlib=libc++ -arch i386 -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -o CMakeFiles/openvr_api.dir/openvr_api_public.cpp.o -c /Users/dylando/fleet/Project-Sapphire/src/openvr_api_public.cpp",
+  "file": "/Users/dylando/fleet/Project-Sapphire/src/openvr_api_public.cpp",
+  "output": "src/CMakeFiles/openvr_api.dir/openvr_api_public.cpp.o"
+},
+{
+  "directory": "/Users/dylando/fleet/Project-Sapphire/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DOSX -DPOSIX -DVRCORE_NO_PLATFORM -DVR_API_PUBLIC -I/Users/dylando/fleet/Project-Sapphire/src -I/Users/dylando/fleet/Project-Sapphire/src/../headers -I/Users/dylando/fleet/Project-Sapphire/src/vrcore  -std=c++11 -fPIC -fvisibility=hidden -stdlib=libc++ -arch i386 -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -o CMakeFiles/openvr_api.dir/jsoncpp.cpp.o -c /Users/dylando/fleet/Project-Sapphire/src/jsoncpp.cpp",
+  "file": "/Users/dylando/fleet/Project-Sapphire/src/jsoncpp.cpp",
+  "output": "src/CMakeFiles/openvr_api.dir/jsoncpp.cpp.o"
+},
+{
+  "directory": "/Users/dylando/fleet/Project-Sapphire/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DOSX -DPOSIX -DVRCORE_NO_PLATFORM -DVR_API_PUBLIC -I/Users/dylando/fleet/Project-Sapphire/src -I/Users/dylando/fleet/Project-Sapphire/src/../headers -I/Users/dylando/fleet/Project-Sapphire/src/vrcore  -std=c++11 -fPIC -fvisibility=hidden -stdlib=libc++ -arch i386 -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -o CMakeFiles/openvr_api.dir/vrcore/dirtools_public.cpp.o -c /Users/dylando/fleet/Project-Sapphire/src/vrcore/dirtools_public.cpp",
+  "file": "/Users/dylando/fleet/Project-Sapphire/src/vrcore/dirtools_public.cpp",
+  "output": "src/CMakeFiles/openvr_api.dir/vrcore/dirtools_public.cpp.o"
+},
+{
+  "directory": "/Users/dylando/fleet/Project-Sapphire/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DOSX -DPOSIX -DVRCORE_NO_PLATFORM -DVR_API_PUBLIC -I/Users/dylando/fleet/Project-Sapphire/src -I/Users/dylando/fleet/Project-Sapphire/src/../headers -I/Users/dylando/fleet/Project-Sapphire/src/vrcore  -std=c++11 -fPIC -fvisibility=hidden -stdlib=libc++ -arch i386 -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -o CMakeFiles/openvr_api.dir/vrcore/envvartools_public.cpp.o -c /Users/dylando/fleet/Project-Sapphire/src/vrcore/envvartools_public.cpp",
+  "file": "/Users/dylando/fleet/Project-Sapphire/src/vrcore/envvartools_public.cpp",
+  "output": "src/CMakeFiles/openvr_api.dir/vrcore/envvartools_public.cpp.o"
+},
+{
+  "directory": "/Users/dylando/fleet/Project-Sapphire/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DOSX -DPOSIX -DVRCORE_NO_PLATFORM -DVR_API_PUBLIC -I/Users/dylando/fleet/Project-Sapphire/src -I/Users/dylando/fleet/Project-Sapphire/src/../headers -I/Users/dylando/fleet/Project-Sapphire/src/vrcore  -std=c++11 -fPIC -fvisibility=hidden -stdlib=libc++ -arch i386 -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -x objective-c++ -o CMakeFiles/openvr_api.dir/vrcore/pathtools_public.cpp.o -c /Users/dylando/fleet/Project-Sapphire/src/vrcore/pathtools_public.cpp",
+  "file": "/Users/dylando/fleet/Project-Sapphire/src/vrcore/pathtools_public.cpp",
+  "output": "src/CMakeFiles/openvr_api.dir/vrcore/pathtools_public.cpp.o"
+},
+{
+  "directory": "/Users/dylando/fleet/Project-Sapphire/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DOSX -DPOSIX -DVRCORE_NO_PLATFORM -DVR_API_PUBLIC -I/Users/dylando/fleet/Project-Sapphire/src -I/Users/dylando/fleet/Project-Sapphire/src/../headers -I/Users/dylando/fleet/Project-Sapphire/src/vrcore  -std=c++11 -fPIC -fvisibility=hidden -stdlib=libc++ -arch i386 -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -o CMakeFiles/openvr_api.dir/vrcore/sharedlibtools_public.cpp.o -c /Users/dylando/fleet/Project-Sapphire/src/vrcore/sharedlibtools_public.cpp",
+  "file": "/Users/dylando/fleet/Project-Sapphire/src/vrcore/sharedlibtools_public.cpp",
+  "output": "src/CMakeFiles/openvr_api.dir/vrcore/sharedlibtools_public.cpp.o"
+},
+{
+  "directory": "/Users/dylando/fleet/Project-Sapphire/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DOSX -DPOSIX -DVRCORE_NO_PLATFORM -DVR_API_PUBLIC -I/Users/dylando/fleet/Project-Sapphire/src -I/Users/dylando/fleet/Project-Sapphire/src/../headers -I/Users/dylando/fleet/Project-Sapphire/src/vrcore  -std=c++11 -fPIC -fvisibility=hidden -stdlib=libc++ -arch i386 -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -o CMakeFiles/openvr_api.dir/vrcore/hmderrors_public.cpp.o -c /Users/dylando/fleet/Project-Sapphire/src/vrcore/hmderrors_public.cpp",
+  "file": "/Users/dylando/fleet/Project-Sapphire/src/vrcore/hmderrors_public.cpp",
+  "output": "src/CMakeFiles/openvr_api.dir/vrcore/hmderrors_public.cpp.o"
+},
+{
+  "directory": "/Users/dylando/fleet/Project-Sapphire/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DOSX -DPOSIX -DVRCORE_NO_PLATFORM -DVR_API_PUBLIC -I/Users/dylando/fleet/Project-Sapphire/src -I/Users/dylando/fleet/Project-Sapphire/src/../headers -I/Users/dylando/fleet/Project-Sapphire/src/vrcore  -std=c++11 -fPIC -fvisibility=hidden -stdlib=libc++ -arch i386 -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -x objective-c++ -o CMakeFiles/openvr_api.dir/vrcore/vrpathregistry_public.cpp.o -c /Users/dylando/fleet/Project-Sapphire/src/vrcore/vrpathregistry_public.cpp",
+  "file": "/Users/dylando/fleet/Project-Sapphire/src/vrcore/vrpathregistry_public.cpp",
+  "output": "src/CMakeFiles/openvr_api.dir/vrcore/vrpathregistry_public.cpp.o"
+},
+{
+  "directory": "/Users/dylando/fleet/Project-Sapphire/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DOSX -DPOSIX -DVRCORE_NO_PLATFORM -DVR_API_PUBLIC -I/Users/dylando/fleet/Project-Sapphire/src -I/Users/dylando/fleet/Project-Sapphire/src/../headers -I/Users/dylando/fleet/Project-Sapphire/src/vrcore  -std=c++11 -fPIC -fvisibility=hidden -stdlib=libc++ -arch i386 -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -o CMakeFiles/openvr_api.dir/vrcore/strtools_public.cpp.o -c /Users/dylando/fleet/Project-Sapphire/src/vrcore/strtools_public.cpp",
+  "file": "/Users/dylando/fleet/Project-Sapphire/src/vrcore/strtools_public.cpp",
+  "output": "src/CMakeFiles/openvr_api.dir/vrcore/strtools_public.cpp.o"
+}
+]
