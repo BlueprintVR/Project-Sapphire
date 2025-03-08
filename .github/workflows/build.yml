@@ -19,7 +19,7 @@ jobs:
     - name: Compile Firmware
       run: |
         source $GITHUB_ENV
-        clang++ -std=c++11 -o firmware main.cpp -I$VULKAN_SDK/include -L$VULKAN_SDK/lib -lvulkan
+        clang++ -std=c++11 -o firmware main.cpp -I$VULKAN_SDK/vulkan -lvulkan
 
     - name: Verify Build
       run: ./firmware || echo "Firmware built successfully"
