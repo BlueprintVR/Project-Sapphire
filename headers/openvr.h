@@ -4117,10 +4117,34 @@ if (overlayError = vr::VROverlayError_None) {
   vr::VROverlay()->SetOverlayFromFile(overlayHandle, "icons/files.png");
 }
 
+overlayError = VROverlay()->CreateOverlay("appSpace", "appSpace", &childOverlayHandle);
+if (overlayError = vr::VROverlayError_None) {
+  VROverlayHandle_t overlayHandle;
+  EVROverlayError error = VRSystem->CreateOverlay("appSpace", "appSpace", &overlayHandle);
+  vr::Texture_t texture;
+  texture.handle = (void*)flat;
+  texture.eType = vr::TextureType_OpenGL;
+  texture.eColorSpace = vr::ColorSpace_Auto;
+  vr::VROverlay()->SetOverlayTexture(overlayHandle, &texture);
+  vr::VROverlay()->SetOverlayFromFile(overlayHandle, "icons/Apps.png");
+}
+
+overlayError = VROverlay()->CreateOverlay("marketplace", "Marketplace", &childOverlayHandle);
+if (overlayError = vr::VROverlayError_None) {
+  VROverlayHandle_t overlayHandle;
+  EVROverlayError error = VRSystem->CreateOverlay("marketplace", "Marketplace", &overlayHandle);
+  vr::Texture_t texture;
+  texture.handle = (void*)flat;
+  texture.eType = vr::TextureType_OpenGL;
+  texture.eColorSpace = vr::ColorSpace_Auto;
+  vr::VROverlay()->SetOverlayTexture(overlayHandle, &texture);
+  vr::VROverlay()->SetOverlayFromFile(overlayHandle, "icons/Marketplace.png");
+}
+
 overlayError = VROverlay()->CreateOverlay("whiteboard", "Whiteboard", &childOverlayHandle);
 if (overlayError = vr::VROverlayError_None) {
   VROverlayHandle_t overlayHandle;
-  EVROverlayError error = VRSystem->CreateOverlay("whiteboard", "Whiteboard". &overlayHandle);
+  EVROverlayError error = VRSystem->CreateOverlay("whiteboard", "Whiteboard", &overlayHandle);
   vr::Texture_t texture;
   texture.handle = (void*)flat;
   texture.eType = vr::TextureType_OpenGL;
